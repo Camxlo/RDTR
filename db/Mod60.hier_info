@@ -1,0 +1,26 @@
+|Mod60
+mod10_0 <= Mod10:inst1.Q0
+Entrada => Mod10:inst1.Entrada
+mod10_1 <= Mod10:inst1.Q1
+mod10_2 <= Mod10:inst1.Q2
+mod10_3 <= Mod10:inst1.Q3
+mod6_0 <= Mod6:inst.Q0
+mod6_1 <= Mod6:inst.Q1
+mod6_2 <= Mod6:inst.Q2
+
+
+|Mod60|Mod10:inst1
+Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Entrada => inst4.IN0
+Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mod60|Mod6:inst
+Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Entrada => inst3.IN0
+Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
